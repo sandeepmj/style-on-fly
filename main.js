@@ -3,19 +3,19 @@ $(document).ready(function () { //verifies all HTML loaded
 
 	$("#hi-gandhi").on("click", function (e) {
 		e.preventDefault(); //disable the button's default behavior
-		$('#gandhi').addClass('active'); /*Note no # or . for class being added*/
+		$('#gandhi').addClass('highlight'); /*Note no # or . for class being added*/
 		$(this).prop('disabled', true);
 	});
 
 	$("#hi-angelou").on("click", function (e) {
 		e.preventDefault(); //disable the button's default behavior
-		$('#angelou').addClass('active');
+		$('#angelou').addClass('highlight');
 		$(this).prop('disabled', true);
 	});
 
 	$('#style-hed').on("click", function (e) {
 		e.preventDefault(); //disable the button's default behavior
-		$("h3").addClass("active");
+		$("h3").addClass("headline");
 		$(this).prop('disabled', true);
 	});
 
@@ -25,7 +25,7 @@ $(document).ready(function () { //verifies all HTML loaded
 		// console.log('hello');
 		$(this).prop('disabled', true);
 
-		$('#gandhi, #angelou, .authors').addClass("active"); // note multiple IDs and classes
+		$('.authors').addClass("someStyling somePadding biggerText addBorder"); // note multiple IDs and classes
 		$("#hi-gandhi, #hi-angelou").prop('disabled', true); // we disabled the highlight buttons highlight got activated
 	});
 
@@ -35,13 +35,13 @@ $(document).ready(function () { //verifies all HTML loaded
 	//adding multiple classes to single element
 	$("#swap-div").on("click", function (e) {
 		e.preventDefault(); //disable the button's default behavior
-		$(".container").addClass('active');
+		$(".container").addClass('newDiv');
 		$(this).prop('disabled', true);
 	});
 
 	$("#hide-div").on("click", function (e) {
 		e.preventDefault(); //disable the button's default behavior
-		$(".dog").addClass('active');
+		$(".dog").addClass('hide-pretty-please');
 		$(this).prop('disabled', true);
 	});
 
@@ -49,7 +49,7 @@ $(document).ready(function () { //verifies all HTML loaded
 
 	$("#reset-all").on("click", function (e) {
 		e.preventDefault(); //disable the button's default behavior
-		$(".highlight, h3, .authors, .container, .dog").removeClass("active");
+		$("#gandhi, #angelou, h3, .authors, .container, .dog").removeClass("highlight headline someStyling somePadding biggerText addBorder newDiv hide-pretty-please  ");
 		$("button").prop('disabled', false);
 
 	});
