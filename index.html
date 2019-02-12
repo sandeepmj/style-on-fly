@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>HTML Skeleton</title>
+
+    <!-- FONT AWESOME -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Your styles should be called here -->
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+  </head>
+
+  <body>
+    <!-- YOUR CONTENT GOES HERE -->
+    <!-- Add in the body -->
+    <div class="container newDiv">
+
+      <div class="dog">
+        <h3 class="headline">Style on the Fly Demo</h3>
+
+
+        <div class='quote'>
+          <p id='gandhi' class="highlight">We may encounter many defeats but we must not be defeated.</p>
+        </div>
+        <!-- Note multiple classes -->
+        <div class='authors someStyling somePadding biggerText addBorder'>
+          <p>--Mahatma Gandhi</p>
+        </div>
+
+        <div class='quote'>
+          <p id='angelou' class="highlight">We may encounter many defeats but we must not be defeated.</p>
+        </div>
+        <!-- Note multiple classes -->
+        <div class='authors someStyling somePadding biggerText addBorder'>
+          <p>--Maya Angelou</p>
+        </div>
+
+
+        <div class="place-btns">
+          <button id='hi-gandhi' class='button'>Highlight Mahatma Gandhi quote</button>
+          <br>
+          <button id='hi-angelou' class='button'>Highlight Maya Angelou quote</button>
+          <br>
+          <button id='style-hed' class='button'>ALL CAP & Red Headline</button>
+          <br>
+          <button id='style-multi' class='button'>Red border, blue text and move right author names</button>
+          <br>
+          <button id='swap-div' class='button'>Make div background gray</button>
+          <br>
+          <button id='hide-div' class='button'>Hide Div</button>
+          <br>
+
+        </div>
+
+      </div>
+      <button id='reset-all' class='button'>Reset all</button>
+    </div>
+    <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Your javascript should be called here -->
+    <script src="main.js"></script>
+  </body>
+
+</html>

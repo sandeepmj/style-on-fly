@@ -1,0 +1,132 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+}
+
+.container {
+    width: 100%;
+    /* background-color: blue; */
+}
+
+/* original styles */
+.highlight {
+    background-color: white;
+}
+
+.highlight.active {
+    background-color: yellow;
+}
+
+/* original styles */
+.authors {
+    margin-left: 100px;
+}
+
+.quote {
+    padding: 20px;
+}
+
+.quote.active {
+    /* background-color: yellow; */
+}
+
+.headline {
+    font-family: georgia, serif;
+    font-size: 2em;
+}
+
+.headline.active {
+    text-transform: uppercase;
+    color: red;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+/* style to fade disable button */
+button:disabled {
+    opacity: .5;
+}
+
+/* end pseudo styles */
+/* new styles */
+.somePadding.active {
+    padding: 20px;
+    margin-left: 250px;
+}
+
+.someStyling, .biggerText, .addBorder {}
+
+.someStyling.active {
+    color: blue;
+}
+
+.biggerText.active {
+    font-size: 2em;
+}
+
+.addBorder.active {
+    border-style: solid;
+    border-color: red;
+}
+
+img {
+    opacity: .25;
+}
+
+.newDiv {}
+
+.newDiv.active {
+    margin: 0 auto;
+    max-width: 400px;
+    background-color: gray;
+}
+
+.dog {}
+
+.dog.active {
+    display: none;
+}
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        /* background-color: red; */
+    }
+
+    /*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+    @media(min-width: 729px) {
+        /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+    }
