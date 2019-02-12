@@ -29,6 +29,7 @@ html, body {
     border-style: solid;
     border-color: black;
     padding: 10px;
+    padding-bottom: 100px;
     /* background-color: blue; */
 }
 
