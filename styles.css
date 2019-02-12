@@ -30,10 +30,6 @@ html, body {
 
 /* original styles */
 .highlight {
-    background-color: white;
-}
-
-.highlight.active {
     background-color: yellow;
 }
 
@@ -46,16 +42,9 @@ html, body {
     padding: 20px;
 }
 
-.quote.active {
-    /* background-color: yellow; */
-}
-
 .headline {
     font-family: georgia, serif;
     font-size: 2em;
-}
-
-.headline.active {
     text-transform: uppercase;
     color: red;
 }
@@ -72,22 +61,22 @@ button:disabled {
 
 /* end pseudo styles */
 /* new styles */
-.somePadding.active {
+.somePadding {
     padding: 20px;
     margin-left: 250px;
 }
 
 .someStyling, .biggerText, .addBorder {}
 
-.someStyling.active {
+.someStyling {
     color: blue;
 }
 
-.biggerText.active {
+.biggerText {
     font-size: 2em;
 }
 
-.addBorder.active {
+.addBorder {
     border-style: solid;
     border-color: red;
 }
@@ -96,17 +85,13 @@ img {
     opacity: .25;
 }
 
-.newDiv {}
-
-.newDiv.active {
+.newDiv {
     margin: 0 auto;
     max-width: 400px;
     background-color: gray;
 }
 
-.dog {}
-
-.dog.active {
+.hide-pretty-please {
     display: none;
 }
 
