@@ -66,7 +66,7 @@ button:disabled {
 /* end pseudo styles */
 /* new styles */
 .somePadding {
-    padding: 20px;
+    padding: 5px;
     margin-left: 250px;
 }
 
@@ -75,7 +75,7 @@ button:disabled {
 }
 
 .biggerText {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .addBorder {
