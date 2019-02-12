@@ -4,26 +4,26 @@ $(document).ready(function () { //verifies all HTML loaded
 	$("#hi-gandhi").on("click", function (e) {
 		e.preventDefault(); //disable the button's default behavior
 		$('#gandhi').addClass('highlight'); /*Note no # or . for class being added*/
-		$(this).prop('disabled', true);
+		$("#hi-gandhi").prop('disabled', true);
 	});
 
 	$("#hi-angelou").on("click", function (e) {
 		e.preventDefault(); //disable the button's default behavior
 		$('#angelou').addClass('highlight');
-		$(this).prop('disabled', true);
+		$("#hi-angelou").prop('disabled', true);
 	});
 
 	$('#style-hed').on("click", function (e) {
 		e.preventDefault(); //disable the button's default behavior
 		$("h3").addClass("headline");
-		$(this).prop('disabled', true);
+		$('#style-hed').prop('disabled', true);
 	});
 
 	$('#style-multi').on("click", function (e) {
 		e.preventDefault(); //disable the button's default behavior
 		console.log("multi is clicked");
 		// console.log('hello');
-		$(this).prop('disabled', true);
+		$('#style-multi').prop('disabled', true);
 
 		$('.authors').addClass("someStyling somePadding biggerText addBorder"); // note multiple IDs and classes
 		$("#hi-gandhi, #hi-angelou").prop('disabled', true); // we disabled the highlight buttons highlight got activated
@@ -36,13 +36,13 @@ $(document).ready(function () { //verifies all HTML loaded
 	$("#swap-div").on("click", function (e) {
 		e.preventDefault(); //disable the button's default behavior
 		$(".container").addClass('newDiv');
-		$(this).prop('disabled', true);
+		$("#swap-div").prop('disabled', true);
 	});
 
 	$("#hide-div").on("click", function (e) {
 		e.preventDefault(); //disable the button's default behavior
 		$(".dog").addClass('hide-pretty-please');
-		$(this).prop('disabled', true);
+		$("#hide-div").prop('disabled', true);
 	});
 
 	// reset all IDs and classes
